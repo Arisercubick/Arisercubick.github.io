@@ -1,2 +1,3 @@
 # Arisercubick.github.io
-A happy birthday website for my grandmother
+This consist a simple sample to upload a happy birthday link for my grandmother 
+
