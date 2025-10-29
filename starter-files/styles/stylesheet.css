@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+/* import Material icons */
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: #025D88;
+  font-family: "Open Sans", sans-serif;
+}
+/* add background image to header */
+.backgrounds {
+	background-image: url("../assets/metro.svg");
+	padding: 3em;
+}
+
+header h1 {
+  padding: 1rem;
+  margin-top: 0;
+  color: white;
+  background-color: #049ce4;
+}
+main {
+  margin: 1rem;
+  flex: 1;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  /* Add grid layout properties */
+}
+#images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#selection ul {
+  list-style: none;
+}
+#selection li {
+  display: flex;
+}
+
+footer, footer a {
+  color: white;
+  background-color: #049ce4;
+}
+
+/* Add media query to make main display as column
+   when the window is less than 899px
+*/
+
+@media (max-width: 899px) {
+	main {
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr;
+		
+		gap: 20px;
+	}
+}
